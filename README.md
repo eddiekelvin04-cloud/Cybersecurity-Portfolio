@@ -1,20 +1,35 @@
-# Kelvin Okoronkwo Edward | Cybersecurity Portfolio
+# Cryptographic Password Security & Entropy Lab
+**Author:** Kelvin Okoronkwo Edward
+**Technical Focus:** Cybersecurity Fundamentals | Data Integrity | Python Automation
 
-Welcome to my technical portfolio. I am a Computer Science graduate from the University of the People, focused on network security and digital forensics.
+## 1. Project Overview
+This project is a technical demonstration of secure authentication principles. It focuses on two critical areas of cybersecurity:
+* **Entropy Analysis:** Evaluating the strength of a password based on complexity requirements (length, casing, digits, and symbols).
+* **Cryptographic Hashing:** Implementing the **SHA-256** algorithm to demonstrate how sensitive data is securely transformed into a one-way hash, ensuring that plain-text passwords are never stored in a database.
 
-## Featured Projects
+## 2. Problem Statement
+Storing plain-text passwords is a primary vulnerability in modern systems. This lab demonstrates a defensive solution by using a "one-way" cryptographic function, ensuring that even if a database is breached, the original user passwords remain protected.
 
-### 1. Network Security Audit & Vulnerability Assessment
-* **Objective:** Identify security gaps in a local network environment.
-* **Tools:** Nmap, Wireshark.
-* **Key Findings:** [Link to your PDF Report](./Kelvin_Edward_Security_Report.pdf)
-* **Summary:** Performed host discovery and service version detection to map attack surfaces and recommended hardening strategies.
+## 3. Technologies Used
+* **Language:** Python 3.x
+* **Libraries:** * `hashlib`: For implementing the SHA-256 hashing algorithm.
+    * `re`: For pattern matching and complexity auditing via Regular Expressions (Regex).
+* **Version Control:** Git/GitHub
 
-## Skills
-* **Network Analysis:** Port Scanning, Traffic Sniffing, Packet Analysis.
-* **Tools:** Nmap, Wireshark, SQL, Linux.
-* **Academic Background:** BSc in Computer Science (GPA 3.2).
+## 4. Key Features
+* **Real-time Feedback:** Provides users with specific suggestions to improve password entropy.
+* **Hex-Digest Output:** Generates a 64-character hexadecimal string representing the secure hash of the input.
+* **Security Best Practices:** Demonstrates the logic behind modern user-authentication systems.
 
-## Contact
-* **Location:** Pretoria, South Africa
-* **LinkedIn:** linkedin.com/in/kelvin-eddie-8b5a27366
+## 5. How to Run
+1. Ensure you have Python installed.
+2. Clone the repository: 
+   `git clone https://github.com/eddiekelvin04-cloud/Password-Security-Lab.git`
+3. Run the script:
+   `python password_lab.py`
+
+## 6. Conclusion & Learning Outcomes
+Through this project, I strengthened my understanding of:
+* The mathematical difference between encryption (two-way) and hashing (one-way).
+* The practical application of Regular Expressions in security auditing.
+* The importance of salt and entropy in defending against brute-force attacks.
